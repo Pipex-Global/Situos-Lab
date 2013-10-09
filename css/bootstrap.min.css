@@ -49,7 +49,7 @@
  body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;line-height:1.428571429;color:#333;background-color:#fff}
  input,button,select,textarea{font-family:inherit;font-size:inherit;line-height:inherit}
  button,input,select[multiple],textarea{background-image:none}
- a{color:#ff8500;text-decoration:none}a:hover,a:focus{color:#d86f00;text-decoration:none;}
+ a{color:#646464;text-decoration:none}a:hover,a:focus{color:#d86f00;text-decoration:none;}
  a:focus{outline:thin dotted #333;outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}img{vertical-align:middle}
  .img-responsive{display:block;height:auto;max-width:100%}.img-rounded{border-radius:6px}
  .img-thumbnail{display:inline-block;height:auto;max-width:100%;padding:4px;line-height:1.428571429;background-color:#fff;border:1px solid #ddd;border-radius:4px;-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out}.img-circle{border-radius:50%}hr{margin-top:20px;margin-bottom:20px;border:0;border-top:1px solid #eee}
@@ -63,6 +63,8 @@
  .row:after{clear:both}.row:before,
  .row:after{display:table;content:" "}
  .row:after{clear:both}
+i {
+    margin-right: 7px;}
 
  .col-xs-1,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9,.col-xs-10,.col-xs-11,.col-xs-12,
  .col-sm-1,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-10,.col-sm-11,.col-sm-12,
