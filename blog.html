@@ -29,7 +29,7 @@
         <![endif]-->
     </head>
     <body>
-		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
@@ -77,34 +77,6 @@
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 blog">
-                        <div class="content-panel">
-                            <h3><a>Flat design is very trendy , but how long will it last?</a></h3>
-                            <p>21/11/13 <span class="pull-right">Zo Liang</span></p>
-                            <img class="content-image" src="img/blog.jpg" alt="" >
-                            <p>If you are an on-trend designer this is the time to jump on the flat design ship if you have not already. Projects using the style – and using it well – are getting a ton of recognition from blogs, including this one, that can help you promote your design.</p>
-                            <p><a class="pull-right btn yellow" href="blog-post.html">Read More</a></p>
-                        </div>
-                        <div class="content-panel">
-                            <h3><a>Pros and Cons of Flat Design</a></h3>
-                            <p>05/08/13 <span class="pull-right">Zo Liang</span></p>
-                            <img class="content-image" src="img/blog2.jpg" alt="" >
-                            <p>中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文</p>
-                            <a class="pull-right btn yellow"  href="blog-post.html">Read More</a>
-                        </div>
-                        <div class="content-panel">
-                            <h3><a>Pros and Cons of Flat Design</a></h3>
-                            <p>05/08/13 <span class="pull-right">Zo Liang</span></p>
-                            <img class="content-image" src="img/blog2.jpg" alt="" >
-                            <p>中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文</p>
-                            <a class="pull-right btn yellow"  href="blog-post.html">Read More</a>
-                        </div>
-                        <div class="content-panel">
-                            <h3><a>Pros and Cons of Flat Design</a></h3>
-                            <p>05/08/13 <span class="pull-right">Zo Liang</span></p>
-                            <img class="content-image" src="img/blog2.jpg" alt="" >
-                            <p>中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文</p>
-                            <a class="pull-right btn yellow"  href="blog-post.html">Read More</a>
-                        </div>
                     </div>
                 </div>
         <!-- footer -->
@@ -148,5 +120,30 @@
         <script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
         <script type="text/javascript" src="js/script.js"></script>
         <script type="text/javascript">parallax(); navbar_change(); slider_top();</script>
+        <script type="text/javascript">
+        getnews();
+        function getnews() {
+            $.ajax({
+                type : 'GET',
+                url : 'http://api-situos.ap01.aws.af.cm/get_news.php',
+                dataType : 'json',
+                success : function(data){
+                    if (data.status == 'ok') {
+                        var html = '';
+                        var len = $.map(data.news, function(n, i) { return i; }).length;
+                        if (len > 0) {
+                             $.each(data.news, function (i, news) {
+                                html += '<div class="content-panel"><h3><a>'+ news.title +'</a></h3><p>'+ news.pubDate +'</p><p>'+ news.description +'</p><p><a class="pull-right btn yellow" target="_blank" href="'+ news.link +'">Read More</a></p></div>';
+                            });
+                            $('.blog').append(html);
+                        }
+                    }else{
+
+                    }
+                    return;
+                }
+            })
+        }
+        </script>
     </body>
 </html>
