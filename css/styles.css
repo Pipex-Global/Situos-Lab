@@ -974,10 +974,17 @@ ul.pagination > li > span:hover { color: #999999; }
 	margin: 20px;
 	min-height: 70px; }
 
-.content-panel li{list-style-type:none;}
+.content-panel li{
+	font-size:14px;
+	list-style-type: none;
+}
 
 .content-panel p{
-	color:#333; }
+	color:#666; 
+}
+.content-panel h4{
+	color:#666; 
+}
 .content-image {
 	margin-bottom: 20px;
 	width: 100%; }
@@ -1072,7 +1079,13 @@ footer p { font-size: 14px; }
 
 /* ---------- color ----------- */
 
-.orange {color:#ff8500;}
+.grey {
+	color:#999;
+}
+
+.orange{ 
+	color:#ff7600;
+}
 
 /* ---------- fontsize ----------- */
 .16 {font-family: 'Lato', sans-serif;
