@@ -64,7 +64,7 @@ class RSSParser
            $data = array();
            $data['title'] = (string)$item->title;
            $data['description'] = (string)$item->description;
-           $data['pubDate'] = (string)$item->pubDate;
+           $data['pubDate'] = (string)date("m/d/Y",strtotime($item->pubDate));
            $data['link'] = (string)$item->link;
            $this->data[] = $data;
       }
