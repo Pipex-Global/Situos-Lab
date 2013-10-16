@@ -2,7 +2,7 @@
 body {
     color: #000;
     width: 100%;
-    font-family: Helvetica,'Lato', sans-serif;
+    font-family: 'Helvetica', sans-serif;
 	font-weight: 300;
     background: #000 url('../img/loading.gif') no-repeat center 100px; }
 p {
@@ -478,7 +478,7 @@ a.btn-navbar-icon {
 
 .label, 
 .badge {
-	font-family: 'Lato', sans-serif;
+	font-family: 'Helvetica', sans-serif;
 	font-weight: 500;
 	color: #ffffff;
 	border-radius: 2px;
@@ -493,7 +493,7 @@ ul.pagination > li > span {
 	background-color: #dcdcdc;
 	border: 1px solid #dcdcdc;
 	color: #fff;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Helvetica', sans-serif;
 	font-weight: 300;
 	-webkit-transition: all .5s ease-in-out;
 	-moz-transition: all .5s ease-in-out;
@@ -509,7 +509,7 @@ ul.pagination > li > span:hover { color: #999999; }
 	background-color: #dcdcdc;
 	border: 1px solid #dcdcdc;
 	color: #fff;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Helvetica', sans-serif;
 	font-weight: 300;
 	-webkit-transition: all .5s ease-in-out;
 	-moz-transition: all .5s ease-in-out;
@@ -619,7 +619,7 @@ ul.pagination > li > span:hover { color: #999999; }
 	margin: 0 auto;
     padding: 20px 0;
     margin: 0 auto;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Helvetica', sans-serif;
     color: #ffffff; }
 .countdown .item {
     display: block;
@@ -1028,10 +1028,10 @@ footer p { font-size: 14px; }
 	border-top: 1px solid #999999;
 	min-height: 80px; }
 .footer-title {
-	font-family: 'Lato', sans-serif;
+	font-family: 'Helvetica', sans-serif;
 	font-weight: 400;
 	text-align: center;
-	margin: 10px; }
+	margin: 0px; }
 
 /* Contact */
 .footer-input {
@@ -1094,7 +1094,7 @@ footer p { font-size: 14px; }
 	font-size: 12px;
 }
 /* ---------- fontsize ----------- */
-.16 {font-family: 'Lato', sans-serif;
+.16 {font-family: 'Helvetica', sans-serif;
 	font-weight: 400;
 	text-align: center;
 	margin: 10px; }
