@@ -4,7 +4,8 @@ body {
     width: 100%;
     font-family: 'Helvetica', sans-serif;
 	font-weight: 300;
-    background: #000 url('../img/loading.gif') no-repeat center 100px; }
+    background: #000 url('../img/loading.gif') no-repeat center 100px; 
+	margin-top: 105px;}
 p {
     font-size: 14px; /* Good font size for reading */
     line-height: 1.5; } /* Good line-height for reading */
@@ -36,7 +37,8 @@ hr{
 }
 
 .navbar-default {
-	background-color: transparent;
+	height: 100px;
+	background-color: white;
 	border: 0; }
 
 .navbar-default.fixed-no-top { background: rgba(255,255,255,0.9); }
@@ -49,7 +51,7 @@ hr{
 
 .navbar-default .navbar-brand { 
 	font-size: 20px;
-	color: #fff; }
+	color: #b2b2b4; }
 
 .navbar-default .navbar-toggle { border: 0; }
 
@@ -61,7 +63,7 @@ hr{
 .navbar-default .navbar-nav li.dropdown.open.active > .dropdown-toggle,
 .navbar-default .navbar-nav > li > a,
 .navbar-default .navbar-brand {
-	color: #fff;
+	color: #505050;
 	text-shadow: none;
 	font-weight: 300;
 	background: none;
@@ -72,7 +74,10 @@ hr{
 	transition: all .5s ease-in-out; }
 .navbar .nav > li > a:hover {
 	color: #b7b7b7 !important;
-	text-shadow: none; }
+	text-shadow: none;
+	display: block;
+	border-bottom: 5px #ff7600; 
+}
 
 @media (max-width: 979px) {
 .nav-collapse .nav > li > a, 
@@ -494,7 +499,7 @@ ul.pagination > li > span {
 	border: 1px solid #dcdcdc;
 	color: #fff;
 	font-family: 'Helvetica', sans-serif;
-	font-weight: 300;
+	font-weight: 400;
 	-webkit-transition: all .5s ease-in-out;
 	-moz-transition: all .5s ease-in-out;
     -ms-transition: all .5s ease-in-out;
@@ -538,6 +543,12 @@ ul.pagination > li > span:hover { color: #999999; }
 	content: 'Popular';
 	position: absolute;
 	margin: 5px 0 0 15px; }
+
+/* helping */
+.helping{
+	background-color: #f1f5f8;
+	color: #666;
+}
 
 /* Pricing General */
 .pricing-well {
@@ -988,18 +999,24 @@ ul.pagination > li > span:hover { color: #999999; }
 .content-image {
 	margin-bottom: 20px;
 	width: 100%; }
-.orange-title-left{
-	color: #666;
+
+.content-title{
+	text-align: center;
 	padding-left: 20px;
 	margin: 0px;
 }
-.orange-title-left h2{
+.content-title h2{
+	color: #56646F;
+	font-weight: 400;
+	font-size: 48px;
 
 }
 .orange-title-left i {
     margin-right: 15px;
     color: #f68b1f;
 }
+
+
 	
 /* <a> Soft Hover */
 a.soft-hover { color: #000; }

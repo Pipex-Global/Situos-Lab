@@ -100,7 +100,7 @@ function portfolio_effects() {
 
 function large_slider_top() {
     $(".large-slider-bg").backstretch([
-        "img/big/big-1.jpg", "img/big/big-2.jpg", "img/big/big-3.jpg", "img/big/big-4.jpg"
+        "img/big/bg-1.jpg", "img/big/bg-2.jpg", "img/big/bg-3.jpg", "img/big/bg-1.jpg"
     ], {
         duration: 10000,
         fade: 750
@@ -109,7 +109,7 @@ function large_slider_top() {
 
 function medium_slider_top() {
     $(".medium-slider-bg").backstretch([
-        "img/big/big-1.jpg", "img/big/big-2.jpg", "img/big/big-2.jpg", "img/big/big-4.jpg"
+        "img/big/bg-1.jpg", "img/big/bg-2.jpg", "img/big/bg-3.jpg", "img/big/bg-1.jpg"
     ], {
         duration: 10000,
         fade: 750
@@ -118,7 +118,7 @@ function medium_slider_top() {
 
 function slider_top() {
     $(".slider-bg").backstretch([
-        "img/big/big-1.jpg", "img/big/big-2.jpg", "img/big/big-2.jpg", "img/big/big-4.jpg"
+        "img/big/bg-1.jpg", "img/big/bg-2.jpg", "img/big/bg-3.jpg", "img/big/bg-1.jpg"
     ], {
         duration: 10000,
         fade: 750
