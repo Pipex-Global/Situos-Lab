@@ -1,13 +1,6 @@
 // Fix for dropdowns on mobile devices
 !function ($) { 
-        $(function(){
-          $('body').on('touchstart.dropdown', '.dropdown-menu', function (e) { 
-              e.stopPropagation(); 
-          });
-          $(document).on('click','.dropdown-menu a',function(){
-              document.location = $(this).attr('href');
-          });
-        })
+
       }(window.jQuery)
 
 function portfolio_effects() {
@@ -164,9 +157,9 @@ var c_topic = $('.orange-title-left h2').html(),s_title = $('.navbar-brand').htm
 function large_navbar_change() {
     $(window).scroll(function () {
         if ($(window).scrollTop() > 650) {
-            $('.navbar-default').css('background', '#333333');
+           // $('.navbar-default').css('background', '#333333');
         } else if ($(window).scrollTop() < 650) {
-            $('.navbar-default').css('background', 'none');
+            //$('.navbar-default').css('background', 'none');
         }
     });
 
@@ -182,9 +175,9 @@ function large_navbar_change() {
 function navbar_change() {
     $(window).scroll(function () {
         if ($(window).scrollTop() > 350) {
-            $('.navbar-default').css('background', '#333333');
+            //$('.navbar-default').css('background', '#333333');
         } else if ($(window).scrollTop() < 350) {
-            $('.navbar-default').css('background', 'none');
+           // $('.navbar-default').css('background', 'none');
         }
     });
 

@@ -2,14 +2,14 @@
 	width: 90%;
 	max-width: 1140px;
 	min-width: 320px;
-	height: 400px;
-	top: 198px;
+	height: 300px;
 	position: absolute;
 	margin-top: 80px;
 	overflow: hidden;
 	background: transparent;
 	font-family: 'Lato', sans-serif;
 	font-weight: 400; }
+
 .da-slide {
 	position: absolute;
 	width: 100%;
@@ -19,6 +19,7 @@
 	font-weight: 400;
 	left: 0px;
 	text-align: left; }
+
 .da-slide .background{-webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; display: none; position: absolute; top: 0; left: 0; height: 100%; width: 100%; background-color:  #ffffff ; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80); opacity: 0.8; }
 .da-slide-current { z-index: 1000; }
 .da-slider-fb .da-slide { left: 100%; }
@@ -63,7 +64,7 @@
 	text-align: center;
 	width: 30%;
 	top: 80px;
-	height: 256px;
+	height: 200px;
 	line-height: 320px;
 	left: 110%; /*60%*/ }
 .da-arrows {

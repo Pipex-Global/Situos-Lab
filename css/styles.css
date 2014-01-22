@@ -4,8 +4,8 @@ body {
     width: 100%;
     font-family: 'Helvetica', sans-serif;
 	font-weight: 300;
-    background: #000 url('../img/loading.gif') no-repeat center 100px; 
-	margin-top: 105px;}
+    background: url('../img/loading.gif') no-repeat center 100px; 
+	margin-top: 60px;}
 p {
     font-size: 14px; /* Good font size for reading */
     line-height: 1.5; } /* Good line-height for reading */
@@ -37,11 +37,10 @@ hr{
 }
 
 .navbar-default {
-	height: 100px;
 	background-color: white;
-	border: 0; }
+	border-bottom: 2px solid #d4d4d4;}
 
-.navbar-default.fixed-no-top { background: rgba(255,255,255,0.9); }
+
 
 .navbar-default.fixed-no-top .navbar-brand,
 .navbar-default.fixed-no-top .navbar-nav > li > a { 
@@ -55,8 +54,7 @@ hr{
 
 .navbar-default .navbar-toggle { border: 0; }
 
-.navbar-default .navbar-toggle:hover, 
-.navbar-default .navbar-toggle:focus { background-color: transparent; }
+
 
 .navbar-default .navbar-nav li.dropdown.open > .dropdown-toggle, 
 .navbar-default .navbar-nav li.dropdown.active > .dropdown-toggle, 
@@ -65,7 +63,7 @@ hr{
 .navbar-default .navbar-brand {
 	color: #505050;
 	text-shadow: none;
-	font-weight: 300;
+	font-weight: 400;
 	background: none;
 	-webkit-transition: all .5s ease-in-out;
 	-moz-transition: all .5s ease-in-out;
@@ -76,7 +74,7 @@ hr{
 	color: #b7b7b7 !important;
 	text-shadow: none;
 	display: block;
-	border-bottom: 5px #ff7600; 
+	border-top: 5px solid #ff7600;
 }
 
 @media (max-width: 979px) {
@@ -154,7 +152,7 @@ a.btn-navbar-icon {
 .navbar .nav > li > .dropdown-menu.pull-right::after {
 	left: auto;
 	right: 13px; }
-.pull-center {
+..da-slide  {
 	text-align: center;
 }
 .navbar .nav > li > .dropdown-menu::after {
@@ -548,6 +546,7 @@ ul.pagination > li > span:hover { color: #999999; }
 .helping{
 	background-color: #f1f5f8;
 	color: #666;
+	padding: 0px 150px;
 }
 
 /* Pricing General */
@@ -828,12 +827,18 @@ ul.pagination > li > span:hover { color: #999999; }
 /* ---------- About Styles ----------- */
 
 /* Team Styles */  
-.team img { margin: 70px 10px 10px; }
+.about {
+    background: url(../img/aboutus.png) no-repeat fixed center; 
+}
+
+/*.team img { margin: 70px 10px 10px; } */
 .team-social {
 	margin: 20px 20px 0 20px;
 	padding: 20px 20px 0 20px;
 	border-top: 1px solid #999999; }
-	
+.team h2{ 
+	color: #57616a;
+	font-size: 36px;}	
 /* Team Colors */  
 .team.blue {
 	background: rgba(87,177,255,0.5); }
@@ -939,9 +944,9 @@ ul.pagination > li > span:hover { color: #999999; }
 
 /* Top Normal Size */
 .title { margin-top: 247px; }
-.display { height: 300px; }	
-.slider-bg { height: 300px; }
-.top { margin-top: 300px; }
+.display { height: 100px; }	
+.slider-bg { height: 100px; }
+.top { margin-top: 100px; }
 .doc { top: 350px; }
 
 /* Top Medium Size */
@@ -953,10 +958,10 @@ ul.pagination > li > span:hover { color: #999999; }
 
 /* Top Large Size */
 .large-title { margin-top: 547px; }
-.large-display { height: 600px; }
-.large-slider-bg{ height: 600px; }
-.large-top { margin-top: 600px; }
-.large-doc { top: 650px; }
+.large-display { height: 380px; }
+.large-slider-bg{ height: 380px; }
+.large-top { margin-top: 380px; }
+.large-doc { top: 400px; }
 @media (max-width:480px) {
 .large-title {
 	position: absolute;
@@ -1036,7 +1041,6 @@ footer {
 	padding-top: 20px;
 	padding-bottom: 20px;
 	background: #222;
-	margin-top: 20px;
 	color: #bebebe; }
 footer.no-margin { margin-top: 0; }
 footer p { font-size: 14px; }
@@ -1093,7 +1097,7 @@ footer p { font-size: 14px; }
 /*distance between icons*/
 .centerUl li{ display: inline;text-align: center; margin:0 5px;}
 
-
+.pull-center {text-align: center;}
 /* ---------- color ----------- */
 
 .grey {

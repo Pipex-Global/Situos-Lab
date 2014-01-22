@@ -138,7 +138,8 @@
                         var len = $.map(data.news, function(n, i) { return i; }).length;
                         if (len > 0) {
                              $.each(data.news, function (i, news) {
-                                html += '<div class="content-panel"><h3><a>'+ news.title +'</a></h3><p>'+ news.pubDate +'</p><p>'+ news.description +'</p><p><a class="pull-right btn yellow" target="_blank" href="'+ news.link +'">Read More</a></p></div>';
+                               // html += '<div class="content-panel"><h3><a>'+ news.title +'</a></h3><p>'+ news.pubDate +'</p><p>'+ news.description +'</p><p><a class="pull-right btn yellow" target="_blank" href="'+ news.link +'">Read More</a></p></div>';
+                            html += '<div class="content-panel"><h3><a>'+ news.title +'</a></h3><p>'+ news.description +'</p><p><a class="pull-right btn yellow" target="_blank" href="'+ news.link +'">Read More</a></p></div>';
                             });
                             $('.blog').append(html);
                         }

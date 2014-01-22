@@ -57,17 +57,25 @@
             </div><!-- /.navbar-collapse -->
         </nav>
 
-        <article>
+        <article class="top-parallax">
+            <section>
+                <div class="slider-bg"><h2>Our Team</h2></div>
+            </section>
+            <section class="container">
+                <div class="row">
+                    <div class="title">
+                        <h1>Our Team</h1>
+                    </div>
+                </div>
+            </section>
+        </article>
+        <article class="doc">
             <section class="container">
                 <div class="row">
                     <div class="orange-title-left">
-                        <h2><i class="icon-group"></i>我们团队</h2>
+                        <h2 class="text-center"><i class="icon-group"></i>我们团队</h2>
                     </div>
-
                     <!-- /who are we start -->
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-
-                    </div>
                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
                             <img class="img-responsive" src="img/aboutus1.png" alt="responsive"></img>
                     </div>
@@ -133,7 +141,17 @@
                                 <h4>可以咨询，可以交流，可以感叹，可以发飙，但不可以订外卖! :-)</h4>
                                 <p>欢迎写邮件至 <a herf="mailto: hello@situos.com" taget:"_blank">hello@situos.com</a>, 或者直接过来跟我们聊聊，希望我们能带给你惊喜。</p>
                             </div>
-
+                <hr>
+                 <div id="social-profiles">
+                    <ul class="centerUl">
+                        <li><a><i class="icon-facebook icon-2x"></i></a></li>
+                        <li><a href="https://twitter.com/digitalcookers" target="_blank"><i class="icon-twitter icon-2x"></i></a></li>
+                        <li><a><i class="icon-linkedin-sign icon-2x"></i></a></li>
+                        <li><a><i class="icon-google-plus icon-2x"></i></a></li>
+                        <li><a><i class="icon-youtube icon-2x"></i></a></li>
+                        <li><a><i class="icon-weibo icon-2x"></i></a></li>                  
+                    </ul>
+                </div>
                 <div class="pull-center">
                     <p>
                     <a href="https://github.com/ZOYU?tab=members" rel="tooltip" title="Our Team in Github">Made in Australia</a> 
@@ -152,6 +170,6 @@
         <script src="js/jquery.backstretch.min.js" type="text/javascript"></script>
         <script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
         <script type="text/javascript" src="js/script.js"></script>
-
+        <script type="text/javascript">parallax(); navbar_change(); slider_top();</script>
     </body>
 </html>
