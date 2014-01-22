@@ -165,9 +165,9 @@ function large_navbar_change() {
 
     $(window).scroll(function () {
         if ($(window).scrollTop() > 630) {
-            $('.navbar-brand').html(c_topic);
+           // $('.navbar-brand').html(c_topic);
         } else if ($(window).scrollTop() < 630) {
-            $('.navbar-brand').html(s_title);
+           // $('.navbar-brand').html(s_title);
         }
     });
 }
