@@ -828,7 +828,13 @@ ul.pagination > li > span:hover { color: #999999; }
 
 /* Team Styles */  
 .about {
-    background: url(../img/aboutus.png) no-repeat fixed center; 
+    background: url(../img/aboutus.png) no-repeat fixed center;
+    height: 400px;
+    width: auto; 
+    text-align: center;
+    vertical-align: middle;
+    padding: 150px;
+    color: white;
 }
 
 /*.team img { margin: 70px 10px 10px; } */
