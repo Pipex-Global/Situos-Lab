@@ -5,9 +5,7 @@ body {
     font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
     background: url('../img/loading.gif') no-repeat center 100px; 
-	margin-top: 60px;
-	color: #333;
-}
+	margin-top: 60px;}
 p {
     font-size: 14px; /* Good font size for reading */
     line-height: 1.5; } /* Good line-height for reading */
@@ -16,7 +14,7 @@ h1 {
     font-size: 60px;
     line-height: 1; }
 h2 {
-	font-weight: 400;
+	font-weight: 500;
 	text-align: left;
 	color: #586666;
 	font-size: 50px;
@@ -155,9 +153,10 @@ a.btn-navbar-icon {
 .navbar .nav > li > .dropdown-menu.pull-right::after {
 	left: auto;
 	right: 13px; }
-..da-slide  {
+.da-slide  {
 	text-align: center;
 }
+
 .navbar .nav > li > .dropdown-menu::after {
 	content: '';
 	display: inline-block;
@@ -851,27 +850,6 @@ ul.pagination > li > span:hover { color: #999999; }
 	text-align: center;
 }
 
-.careers {
-    background: url(../img/job.png) no-repeat fixed center;
-    height: 400px;
-    width: auto; 
-    vertical-align: middle;
-    padding: 150px;
-    color: white;
-}
-
-.careers h1 {
-	font-weight: 500;
-	text-align: center;
-}
-
-.careers h4 {
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 24px;
-	text-align: center;
-}
-
 /*.team img { margin: 70px 10px 10px; } */
 .team-social {
 	margin: 20px 20px 0 20px;
@@ -1048,12 +1026,12 @@ ul.pagination > li > span:hover { color: #999999; }
 
 .content-title{
 	text-align: center;
+	padding-left: 20px;
 	margin: 0px;
 }
 .content-title h2{
 	color: #56646F;
 	font-weight: 400;
-	text-align: center;
 	font-size: 48px;
 
 }
@@ -1089,19 +1067,13 @@ footer p { font-size: 14px; }
 	padding: 20px;
 	border-top: 1px solid #999999;
 	min-height: 80px; }
-.footer h2{
+.footer-title {
 	font-family: 'Helvetica', sans-serif;
 	font-weight: 400;
-	color: #fff;
 	text-align: center;
-	margin: 0px; 
-}
+	margin: 0px; }
 
 /* Contact */
-#contact h2{
-	color: #ccc;
-	text-align: center;
-}
 .footer-input {
 	border-radius: 0 !important;
 	width: 100%;
