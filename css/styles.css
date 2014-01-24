@@ -1029,7 +1029,8 @@ ul.pagination > li > span:hover { color: #999999; }
 .content-panel {
 	padding: 20px;
 	margin: 20px;
-	min-height: 70px; }
+	min-height: 70px;
+}
 
 .content-panel li{
 	font-size:14px;
@@ -1038,6 +1039,9 @@ ul.pagination > li > span:hover { color: #999999; }
 
 .content-panel p{
 	color:#666; 
+}
+.content-panel h3{
+	color:#56646F; 
 }
 .content-panel h4{
 	color:#666; 
